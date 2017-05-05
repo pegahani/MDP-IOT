@@ -1,0 +1,78 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem{journals/ws/CardosoSMAK04}
+{Jorge~S. Cardoso}, {Amit~P. Sheth}, {John~A. Miller}, {Jonathan Arnold}, {and}
+  {Krys Kochut}. 2004.
+\newblock \showarticletitle{Quality of service for workflows and web service
+  processes.}
+\newblock {\em J. Web Sem.\/} {1}, 3 (2004), 281--308.
+\newblock
+
+
+\bibitem{Flinn:1999:EAM:319344.319155}
+{Jason Flinn} {and} {M. Satyanarayanan}. 1999.
+\newblock \showarticletitle{Energy-aware Adaptation for Mobile Applications}.
+\newblock {\em SIGOPS Oper. Syst. Rev.\/} {33}, 5 (Dec. 1999), 48--63.
+\newblock
+
+
+\bibitem{DBLP:journals/tase/KhanoucheACKY16}
+{Mohamed~Essaid Khanouche}, {Yacine Amirat}, {Abdelghani Chibani}, {Moussa
+  Kerkar}, {and} {Ali Yachir}. 2016.
+\newblock \showarticletitle{Energy-Centered and QoS-Aware Services Selection
+  for Internet of Things}.
+\newblock {\em {IEEE} Trans. Automation Science and Engineering\/} {13}, 3
+  (2016), 1256--1269.
+\newblock
+
+
+\bibitem{Puterman:1994:MDP:528623}
+{Martin~L. Puterman}. 1994.
+\newblock {\em Markov Decision Processes: Discrete Stochastic Dynamic
+  Programming\/} (1st ed.).
+\newblock John Wiley \& Sons, Inc., New York, NY, USA.
+\newblock
+\showISBNx{0471619779}
+
+
+\bibitem{Wang2010}
+{Hongbing Wang}, {Xuan Zhou}, {Xiang Zhou}, {Weihong Liu}, {Wenya Li}, {and}
+  {Athman Bouguettaya}. 2010.
+\newblock {\em Adaptive Service Composition Based on Reinforcement Learning}.
+\newblock Springer Berlin Heidelberg, 92--107.
+\newblock
+
+
+\end{thebibliography}
