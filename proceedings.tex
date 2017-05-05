@@ -1,0 +1,404 @@
+\documentclass{sigchi}
+
+% Use this section to set the ACM copyright statement (e.g. for
+% preprints).  Consult the conference website for the camera-ready
+% copyright statement.
+
+% Copyright
+\CopyrightYear{2016}
+%\setcopyright{acmcopyright}
+\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+% DOI
+\doi{http://dx.doi.org/10.475/123_4}
+% ISBN
+\isbn{123-4567-24-567/08/06}
+%Conference
+\conferenceinfo{CHI'16,}{May 07--12, 2016, San Jose, CA, USA}
+%Price
+\acmPrice{\$15.00}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+%% HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP --
+%% Please note you need to make sure the copy for your specific
+%% license is used here!
+% \toappear{
+% Permission to make digital or hard copies of all or part of this work
+% for personal or classroom use is granted without fee provided that
+% copies are not made or distributed for profit or commercial advantage
+% and that copies bear this notice and the full citation on the first
+% page. Copyrights for components of this work owned by others than ACM
+% must be honored. Abstracting with credit is permitted. To copy
+% otherwise, or republish, to post on servers or to redistribute to
+% lists, requires prior specific permission and/or a fee. Request
+% permissions from \href{mailto:Permissions@acm.org}{Permissions@acm.org}. \\
+% \emph{CHI '16},  May 07--12, 2016, San Jose, CA, USA \\
+% ACM xxx-x-xxxx-xxxx-x/xx/xx\ldots \$15.00 \\
+% DOI: \url{http://dx.doi.org/xx.xxxx/xxxxxxx.xxxxxxx}
+% }
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}       % to better equalize the last page
+\usepackage{graphics}      % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}   % for umlauts and other diaeresis
+%\usepackage{txfonts}
+%\usepackage{mathptmx}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage[]{algorithm2e}
+
+\newtheorem{definition}{Definition}
+
+% Some optional stuff you might like/need.
+\usepackage{microtype}        % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}    % Fixes bug in hyperref caption linking
+\usepackage{ccicons}          % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+% If you want to use todo notes, marginpars etc. during creation of
+% your draft document, you have to enable the "chi_draft" option for
+% the document class. To do this, change the very first line to:
+% "\documentclass[chi_draft]{sigchi}". You can then place todo notes
+% by using the "\todo{...}"  command. Make sure to disable the draft
+% option again before submitting your final document.
+\usepackage{todonotes}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Interactive QoS-aware Services Selection \\ for the Internet of Things}
+\def\plainauthor{First Author, Second Author, Third Author,
+  Fourth Author, Fifth Author, Sixth Author}
+\def\emptyauthor{}
+\def\plainkeywords{Authors' choice; of terms; separated; by
+  semicolons; include commas, within terms only; required.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+%\numberofauthors{3}
+%\author{%
+%  \alignauthor{Leave Authors Anonymous\\
+%    \affaddr{for Submission}\\
+%    \affaddr{City, Country}\\
+%    \email{e-mail address}}\\
+%  \alignauthor{Leave Authors Anonymous\\
+%    \affaddr{for Submission}\\
+%    \affaddr{City, Country}\\
+%    \email{e-mail address}}\\
+%  \alignauthor{Leave Authors Anonymous\\
+%    \affaddr{for Submission}\\
+%    \affaddr{City, Country}\\
+%    \email{e-mail address}}\\
+%}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\category{H.5.m.}{}{}{}
+
+\keywords{\plainkeywords}
+
+\section{Problematic}
+
+\textbf{Internet Of Things (IOT)} services composition is an effective method that combines individual services to generate a more powerful service. 
+
+The problem arises when dealing with complex user tasks formed of multiple (abstract) activities, and each activity can be achieved using several services that are functionally equivalent, but providing different Quality Of Service (QoS) levels. The question to be asked is then:  \emph{``what are the concrete services that should be selected for each activity (Abstract services) in the user's task in order to meet the user's QoS requirements and produce the highest QoS?"}
+
+The term concrete service refers to an invocable service, whereas an abstract service, called also a class of services, defines, in an abstract manner, the functionality of a service. For each abstract service, there may exist several concrete services that have the same functionality but possibly with different quality levels.  
+
+\cite{DBLP:journals/tase/KhanoucheACKY16} finds a composition plan of abstract services by specifying the order of concrete services and rules for data transfer between these services. It means they have a sequential set of Abstract services that indicates an order on the set of activities and they are looking for the best concrete service in each abstract activity. 
+
+Invoking any abstract service produces several values for different QoS attributes such as response time, availability, cost, reliability and etc. They assume that the order of QoS attributes is given according to the user 's expectations. They propose an algorithm namely, \emph{Energy-centered and QoS-aware Services Selection (EQSA)} computes the optimal plan of service composition offering the QoS level required for user's satisfaction while minimizing the total energy consumption.
+
+In this paper we are going to solve QoS-aware service composition without knowing the user preferred rank on the QoS attributes. Thus, \textbf{our proposed algorithm learns the user given weight on various QoS attributes while computing an optimal plan for the composite services selection}. {\color{blue} In order to examine our algorithms experimentally, we propose several scenarios:
+
+\begin{itemize}
+\item Without loss of generality, composite services considered in the simulation scenarios have a sequential structure. Other structures can be transformed into sequential structures using existing techniques \cite{journals/ws/CardosoSMAK04}. The scenarios are generated by varying the number of services classes  $m$, and the number of concrete services per class $n$. For each concrete service, three QoS attributes are evaluated: cost, availability, and reliability \cite{DBLP:journals/tase/KhanoucheACKY16}. In this paper they generate data simultaneously:
+\begin{itemize}
+\item[-] The availability and reliability are generated assuming a uniform distribution over the interval $[0.95, 0.99999]$.
+\item[-] The cost of services is generated according to a uniform distribution over the interval $[10, 20]$.
+\item[-] Fluctuations of the QoS values are considered as follows: at iteration $t+1$ of the selection process, the QoS value $qos_{q,j}^i (t+1)$ of each attribute is randomly chosen in the interval $[0.9 qos_{q,j}^i(t), 1.1 qos_{q,j}^i(t)]$ where $qos_{q,j}^i(t)$ represents the value of this attribute at time $t$.
+\item[-]For the energy model they used the model described in \cite{Flinn:1999:EAM:319344.319155}: the battery of each device has an initial charge value $C_{\text{initial}}$, chosen randomly in the interval $[0.7 C_{\text{max}}, 1.0 C_{\text{max}}]$, where $C_{\text{max}}$ represents the maximum battery charge. 
+
+This model has the advantage to consider services with different autonomy. Each invocation of a concrete service induces an average energy consumption. When a service is requested, a charge chosen randomly in the interval $[100 \; mA.s, 10000 \; mA.s]$ is subtracted from the actual battery charge of the device hosting the service. A device stops providing a service when a critical battery level $C_{\text{threshold}}$ is reached. The maximum battery capacity of a device is $1500 mA$, whereas the critical battery level $C_{\text{threshold}}$ is set to $30\%$ of the maximum battery charge. 
+\end{itemize}
+\end{itemize}
+}
+
+Our proposed algorithm can be tested on the same model given in paper \cite{DBLP:journals/tase/KhanoucheACKY16} while it can be implemented on the more general scenario. For instance, we can assume that abstract services do not have an ordinal structure and they can be connected to each other based on a given graph model. Another assumption which is that there is a probability distribution that indicates which abstract activity can be selected as a start activity. 
+
+\section{Problem Formulation}
+
+\subsection{Vector-valued Markov Decision Process}
+In this section, we describe the problem of QoS-aware service selection and its relation to our approach. Our approach we utilise Markov Decision Process (MDP) concept to describe the service composition problem. We use Vector-valued MDP (VMDP) to model multi-objective service composition under uncertainties. First, it is required to describe abstract and concrete services model. 
+
+\begin{definition}
+A \textbf{Concrete Service} $cs_j$ is described by two parts: functional properties and non-functional properties.
+\begin{itemize}
+\item functional : $cs_j$ is under the form of transaction function Action$(cs_j)$ that takes an input data vector InputData$(cs_j)$ to produce an output data vector OutputData$(cs_j)$ 
+\item non-functional : is defined by a QoS attributes vector QoS$(cs_j)$ and the energy profile EProf$(cs_j)$ {\color{red} I think that you don't agree with this part of the definition}.  
+\end{itemize}
+\end{definition}
+
+\begin{definition}
+An \textbf{Abstract Service} $AS_i = \{ cs_1^i, \cdots, cs_n^i \}$ is a class of $n$ concrete services with similar functional properties. That means they have the same input data vector and output data vector, but their nonfunctional properties are different. 
+\end{definition}
+
+Formally, a \emph{Markov Decision Process (MDP)} with reward value is defined as follow:
+
+\begin{definition}
+A \textbf{Markov Decision Process (MDP)} \cite{Puterman:1994:MDP:528623} is defined by a tuple of $6$ quantities $(S, A, P, r, \gamma)$ ({\color{red} I will delete $\beta$ from the definition}) where:
+
+\begin{itemize}
+\item[-]States: $S$ is a finite set of States
+\item[-] Actions: $A(s)$ is a finite set of actions that agent can select to interact with the environment.
+\item[-] State Transition Probability Distribution: $P(s'| s,a)$ encodes the probability of going to state $s'$ when the agent is in state $s$ and chooses action $a$.
+\item[-] Reward Function: $r : S \times A \longrightarrow \mathbb{R}$, quantifies the utility of performing action $a$ in state $s$.    
+\item[-] Discount Factor: $\gamma \in [0,1)$ indicates how less important are future rewards in compared to the immediate ones. 
+%\item[-] Initial State Distribution: $\beta : S \longrightarrow [0, 1]$ indicates that the probability that the agent starts her interactions with the environment in state $s$ is $\beta(s)$.
+\end{itemize}
+
+\end{definition}
+
+A solution for MDP is a policy $\pi: S \longrightarrow A$ that associates an action to each state. Normally,  policies are evaluated by a value function $v^{\pi} : S \longrightarrow \mathbb{R}$ which is defined as expectation of sum of rewards w.r.t the workflow $\pi$: 
+
+\begin{equation}\label{eq:value-func}
+%v^{\pi} = \mathbb{E}_{\pi} \{ \sum_{i=1}^{\infty} \gamma^i r_{i} \} 
+v^{\pi}(s) = r(s,a) + \gamma \sum_{s' \in S} P(s'|\pi(s),a) v^{\pi}(s') 
+\end{equation}
+
+Therefore, the preference relation among policies is defined as below:
+
+\begin{equation}
+\pi \succeq \pi' \Leftrightarrow \forall s \in S \; v^{\pi}(s) \geq v^{\pi'}(s)
+\end{equation}
+
+A solution to the an MDP is an \emph{optimal policy}, that is the highest policy with respect to the other policies, i.e. : 
+
+\begin{equation}
+\pi^* \text{s.t.} \; \forall \; \pi, \; \pi^* \succeq \pi
+\end{equation}
+
+To find such a policy/workflow, we can use a dynamic programming, namely \emph{Belleman Equation}.
+
+\begin{equation}
+v^*(s) = \text{max}_{a \in A} r(s,a) + \gamma \sum_{s' \in S} P(s'|s,a) v^*(s')
+\end{equation}
+
+By extending the MDP to a vector-valued MDP (VMDP), we will have the modified following definition: 
+
+\begin{definition}
+A \textbf{Vector-valued MDP (VMDP)} is defined by a tuple $ (S, A, P, \bar{r}, \gamma, \beta)$ where the vector-valued reward function $\bar{r}$ is defined on $S \times A$ and $\bar{r}(s, a) = (r_1(s,a), \cdots, r_d(s,a)) \in \mathbb{R}^d$ is the vector valued reward defined by $\bar{r}$ in $(s,a)$. 
+
+Notice that $d$ is the number of objectives in the environment while each element $i$ in reward vector $\bar{r}(s, a)$ indicates importance of the $i$-th objective in the model by selecting action $a$ in state $s$. 
+\end{definition}
+
+\subsection{MDP for Service Compositions}
+
+By modeling the service composition as a VMDP, we will be able to find the best selected concrete services for any abstract activity by communicating with the agent and asking about her preferences on QoS attributes. 
+
+To solve the service composition problem without knowing anything about the user's preferences on the QoS attributes, we use VMDP modeling to select the optimal concrete service in each abstract services satisfying user's priorities. This service composition model can be called as VMDP-Service Composition (VMDP-SC) as:
+
+\begin{definition}
+({\color{blue} the idea of this definition comes from Web Service Composition MDP (WSC-MDP) \cite{DBLP:journals/tase/KhanoucheACKY16,Wang2010}}) A \textbf{VMDP-Service Composition (VMDP-SC} is a $6$ tuple $(AS, CS(.), P, \bar{r}, AS_T, \beta)$, where ({\color{red} We define $\gamma = 1$ because our models are horizontally finite.}) 
+
+\begin{itemize}
+\item[-] $AS$ is a finite set of abstract services of the world.
+\item[-] $SC(sa)$ is the set ({ \color{red} \cite{DBLP:journals/tase/KhanoucheACKY16} used ``class'' concept instead of set? }) of available concrete services for the abstract service $sa \in SA$.
+\item[-] $P(sa' |sa, sc )$ is the probability of invoking the concrete service $sc$ in abstract activity $sa$ and resulting in the abstract activity $sa'$.
+\item[-] $ \overline{QoS}: AS \times CS \longrightarrow \mathbb{R}^d$ is a reward function that indicates the value of concrete service $cs \in CS(s)$ after invoking in abstract service $as$. $\bar{QoS}(sa, sc)$ reward is the generated QoS vector value after evoking $cs$ in $as$. Notice that $d$ is the number of QoS attributes and we have $\overline{QoS}(sa, sc) = (qos_1(sa,sc), \cdots, qos_d(sa,sc))$. 
+\item[-] $AS_T$ is the set of terminal services. It means the execution of the service composition terminates by arriving in one of these sates.
+\item[-] $\beta(sa)$ represents the probability of starting abstract activity in abstract service $sa$. Remind that $\sum_{sa \in SA} \beta(sa) = 1 $. ({\color{red} if I remove $\beta$, I will use the MDP model with start abstract services such as \cite{DBLP:journals/tase/KhanoucheACKY16}. })
+\end{itemize}
+\end{definition}
+
+The solution for QoS-aware service selection is defined as a policy in VMDP-SC model.
+
+\begin{definition}
+A \textbf{policy service composition} $\pi: AS \longrightarrow SC$ is a function that defines which concrete service should be invoked in any abstract service in order to give the best trade-offs among multiple QoS attributes. 
+\end{definition}
+
+Since reward values in MDP-SC are the QOS vectors for each concrete services, each policy should be evaluated with a vector function (see Equation~\ref{eq:value-func}):
+\begin{equation}
+\bar{v}^{\pi}(as) = \overline{QoS}(as, \pi(cs)) + \gamma \sum_{s' \in S} P(as' | \pi(as), as) \bar{v}^{\pi}(as')
+\end{equation}
+
+Now, comparing two workflows transfers to comparing two vectors. The optimal workflow should satisfy various users withe different preferences among the QoS attributes \cite{DBLP:journals/tase/KhanoucheACKY16}. Thus, we define user preferences as a linear combination of QoS attributes such that:
+
+\begin{equation}
+QoS(as, cs) = \sum_{i=1}^d \bar{w}_i qos_i = \bar{w} \cdot \overline{QoS}(as, cs) 
+\end{equation} 
+
+where $\bar{w} = (w_0, \cdots, w_d) $ is a weight vector, indicating the user preferences on the QoS attributes such that $\sum_{i=1}^d w_i = 1$. If the user preferences on the QoS attributes is known, the optimal workflow can be computed easily. Since user preferences on the QoS attributes can not be interpreted easily, we assume that $\bar{w}$ is unknown and try to find the best workflow with a few number of communications with user when it is required. ({\color{red} this phrase should be rephrased, very strong motivation should be added in this part.}). 
+
+To compare workflow vector values with each other, we consider first, the unknown weight vectors are confined in a $d-1$ dimensional polytope as $W$ such that:
+\begin{equation}
+W = \{ (w_1, w2, \cdots, w_d) \; | \; \sum_{i=2}^d w_i \leq 1 \; \text{and} \; w_1 = 1-\sum_{i=2}^d w_i \}
+\end{equation}
+
+To compare vector QoS values with each other, we can use three different comparison methods. Assume $\bar{v}^a = (a_1, \cdots, a_d)$  and $\bar{v}^b = (b_1, \cdots, b_d)$ are two $d$-dimensional vectors representing expectation of sum of QoS values for two workflows $a$ and $b$. 
+
+\begin{itemize}
+\item[-] the most natural comparison method is \emph{pareto comparison} that defines:
+\begin{equation}
+\bar{v}^a \succeq_P \bar{v}^b \Leftrightarrow \forall \; i \; a_i \geq b_i
+\end{equation}
+\item[-] \emph{Kdominance comparison} defines $\bar{v}^a$ is more preferred than $\bar{v}^b$ if, it is better for any $\bar{w}$ in polytope $W$:
+\begin{equation}
+\bar{v}^a \succeq_K \bar{v}^b \Leftrightarrow \forall \; \bar{w} \in W \; \bar{w} \cdot \bar{v}^a \geq \bar{w} \cdot \bar{v}^b
+\end{equation}
+\item[-] query this comparison question to the user, i.e. $\bar{v}^a  \succeq_q \bar{v}^a$. 
+\end{itemize} 
+
+Remind that, the Kdominance comparison is a linear programming problem. it means, $\bar{v}^a  \succeq_K \bar{v}^b$ is there is non-negative solution for the following LP:
+\begin{equation}
+\left\{
+\begin{array}{ll}
+\text{min} \; \bar{w} \cdot (\bar{v}^a - \bar{v}^b) \\
+\text{subject to } \; \bar{w} \in W
+\end{array}
+\right.
+\end{equation}
+If there is no non-negative solution for two comparisons $\bar{v}^a  \succeq_K \bar{v}^b$ and $\bar{v}^b  \succeq_K \bar{v}^a$, these two vectors are not comparable using the Kdominance. 
+
+In the rest of this paper, we will explain how to find the optimal policy/workflow that gives the best trade-off among multiple QoS criteria satisfying the user preferences on QoS attributes. Since we are interested in computing the best match for each agent regarding her preferences, our algorithms queries the agent when it is required. %Therefore, the proposed queries to the agent get the partial information on their preferences on the QoS attributes.  
+
+\section{Interactive Reinforcement Algorithms Service Composition}
+
+{\color{blue} I explain the basic general algorithm here. The rest will be modified later.}
+
+Assume the problem is modeled as a VMDP-Sc. We present Algorithm~\ref{algo:ivi} to find the optimal workflow (policy) satisfying user preferences.({\color{red} it should be modified by considering the terminal services $SA_T$ and finite horizon MDPs}) 
+
+\begin{algorithm}[]
+ \KwData{VMDP-SC$(AS, A(), P, \bar{r}, \beta)$, a $\Lambda$ polytope of user weights on objectives, precision $\epsilon$}
+ \KwResult{The optimal service selection policy for the given user. }
+ $t \longleftarrow 0$ \\
+ %$\pi_{\text{best}} \longleftarrow $ choose random policy \\
+ $\forall s \; \bar{v}_0(s) \longleftarrow (0, \cdots, 0)$ zero vector of dimension $d$\footnote{$d$ is the number of quality attributes for QoS} \\
+ $\mathcal{K} \longleftarrow $ set of constraints on $\Lambda$ \\
+ \Repeat{$|| \bar{v}_t - \bar{v}_{t+1} || \leq \epsilon$}{
+ 	$t \longleftarrow t+1$ \\
+	\For{\textbf{each} $as \in AS$}{
+		best $\longleftarrow (0, \cdots, 0)$ \\
+		\For{\textbf{each} $sc \in A(sc)$}{
+			$\bar{v}_t(as) \longleftarrow QoS(as, cs) + \sum_{as'} P(as' | as, cs) \bar{v}_{t-1}(as')$\\
+			$($ best $, \mathcal{K} ) \longleftarrow $ getBest(best, $\bar{v}, \mathcal{K}$)
+		}
+		$\bar{v}_t(as) \longleftarrow $ best
+	}
+ } 
+ \textbf{return} $\bar{v}_t$ \\
+ \vspace{0.3cm}
+ \caption{How to select the best composite for each abstract service respecting user preferences on QoS attributes}
+\end{algorithm}\label{algo:ivi}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{algorithm}[]
+
+\KwData{finds the more proffered vector between two vectors $\bar{v}$ and $\bar{v}'$ w.r.t $ \mathcal{K}$}
+\If{paretodominates($\bar{v}, \bar{v}'$)}{
+	\textbf{return} $(\bar{v}, \mathcal{K})$
+}
+\If{paretodominates($\bar{v}', \bar{v}$)}{
+	\textbf{return} $(\bar{v}', \mathcal{K})$
+}
+\If{Kdominates($\bar{v}, \bar{v}',  \mathcal{K}$)}{
+	\textbf{return} $(\bar{v}, \mathcal{K})$
+}
+\If{Kdominates($\bar{v}', \bar{v},  \mathcal{K}$)}{
+	\textbf{return} $(\bar{v}', \mathcal{K})$
+}
+$(\bar{v}_{\text{best}}, \mathcal{K}) \longleftarrow $ query$(\bar{v}, \bar{v}',  \mathcal{K})$ \\
+\textbf{return} $(\bar{v}_{\text{best}}, \mathcal{K})$
+
+\end{algorithm}\label{algo:getBest}
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[]
+\KwData{$\bar{v}, \bar{v}', \mathcal{K}$}
+\KwResult{ it fins query the comparison between $\bar{v}$ and $\bar{v}',$ to the user and modifies $\mathcal{K}$ according to her response.}
+Build query $q$ for the comparison between $\bar{v}$ and $\bar{v}'$ \\
+\If{if the user prefers $\bar{v}$ to $\bar{v}'$}{
+	\textbf{return} $(\bar{v}, \{ (\bar{v} - \bar{v}') \cdot \bar{\lambda} \geq 0 \})$
+}
+\Else{
+	\textbf{return} $(\bar{v}, \{ (\bar{v}' - \bar{v}) \cdot \bar{\lambda} \geq 0 \})$
+}
+
+\end{algorithm}\label{algo:query}
+
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{sample}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
