@@ -32,6 +32,15 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem{DBLP:conf/ijcnn/AlizadehCL16}
+{Pegah Alizadeh}, {Yann Chevaleyre}, {and} {Fran{\c{c}}ois L{\'{e}}vy}. 2016.
+\newblock \showarticletitle{Advantage based value iteration for Markov decision
+  processes with unknown rewards}. In {\em 2016 International Joint Conference
+  on Neural Networks, {IJCNN} 2016, Vancouver, BC, Canada, July 24-29, 2016}.
+  3837--3844.
+\newblock
+
+
 \bibitem{journals/ws/CardosoSMAK04}
 {Jorge~S. Cardoso}, {Amit~P. Sheth}, {John~A. Miller}, {Jonathan Arnold}, {and}
   {Krys Kochut}. 2004.
@@ -58,6 +67,15 @@
 \newblock
 
 
+\bibitem{DBLP:conf/icsoc/MoustafaZ13}
+{Ahmed Moustafa} {and} {Minjie Zhang}. 2013.
+\newblock \showarticletitle{Multi-Objective Service Composition Using
+  Reinforcement Learning}. In {\em Service-Oriented Computing - 11th
+  International Conference, {ICSOC} 2013, Berlin, Germany, December 2-5, 2013,
+  Proceedings}. 298--312.
+\newblock
+
+
 \bibitem{Puterman:1994:MDP:528623}
 {Martin~L. Puterman}. 1994.
 \newblock {\em Markov Decision Processes: Discrete Stochastic Dynamic
@@ -73,6 +91,17 @@
 \newblock {\em Adaptive Service Composition Based on Reinforcement Learning}.
 \newblock Springer Berlin Heidelberg, 92--107.
 \newblock
+
+
+\bibitem{weng:hal-00942290}
+{Paul Weng} {and} {Bruno Zanuttini}. 2013.
+\newblock \showarticletitle{{Interactive Value Iteration for Markov Decision
+  Processes with Unknown Rewards}}. In {\em {IJCAI '13 - Twenty-Third
+  international joint conference on Artificial Intelligence}}. {AAAI Press},
+  Beijing, China, 2415--2421.
+\newblock
+\showURL{%
+\url{https://hal.archives-ouvertes.fr/hal-00942290}}
 
 
 \end{thebibliography}
